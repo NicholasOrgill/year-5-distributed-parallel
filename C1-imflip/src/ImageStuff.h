@@ -13,7 +13,7 @@ struct Pixel
 	unsigned char B;
 };
 
-unsigned char **ReadBMP(char *);
-void WriteBMP(unsigned char **, char *);
+unsigned char** ReadBMP(char* );
+void WriteBMP(unsigned char** , char*);
 
-extern struct ImgProp ip;
+extern struct ImgProp 	ip;
