@@ -1,0 +1,15 @@
+public class Peterson implements Lock {
+
+    private boolean[] flag = new boolean[2];
+    private int victim;
+
+    public void lock() {
+        flag[i] = true;
+        victim = i;
+        while (flag[j] && victim == i) {};
+    }
+    
+    public void unlock() {
+        flag[i] = false;
+    }
+}

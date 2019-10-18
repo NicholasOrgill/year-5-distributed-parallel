@@ -1,0 +1,25 @@
+public class Filter implements Lock {
+    int[] level;
+    int[] victim;
+    int n;
+    public Filter(int n) {
+        this.n = n;
+        level = new int[n];
+        victim = new int[n];
+        for (int i = 1; i < n; i++) {
+            level[i] = 0;
+        }
+    }
+
+    public void lock() {
+        for (int l = 1; l < this.n; l++) {
+            level[i] = l;
+            victim[l] = i;
+        }
+    }
+
+    public void unlock() {
+        level[i] = 0;
+    }
+
+}
